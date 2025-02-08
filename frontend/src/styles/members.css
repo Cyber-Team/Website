@@ -1,0 +1,23 @@
+/* Members.css */
+.MembersMain {
+    background-color: #101010;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+  
+.HeadingMem {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+  
+.MembersDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
