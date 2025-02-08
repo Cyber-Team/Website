@@ -2,6 +2,7 @@
 import './App.css'
 import BlogSlider from './components/BlogSection';
 import Clients from './components/Clients';
+import He from './components/He';
 // import Boxbss from './components/Boxbss'
 import "./components/MemberCard";
 import Milestone from './components/Milestone';
@@ -14,8 +15,8 @@ function App() {
   return (
   
     <div className="bg-gray-900 text-white min-h-screen">
+      <He />
       <Members />
-      {/* <BlogSlider/> */}
       <Clients />
       <Milestone />
     </div>
