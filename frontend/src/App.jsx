@@ -12,15 +12,18 @@ function App() {
 
 
   return (
-    <>
+  
+    <div className="bg-gray-900 text-white min-h-screen">
       <Members />
       {/* <BlogSlider/> */}
       <Clients />
       <Milestone />
+    </div>
+      
       
   
      
-    </>
+    
   )
 }
 
