@@ -11,9 +11,9 @@ const He = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-black to-red-900 relative overflow-hidden">
       {/* Animated background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 animate-pulse"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-red-500/10 animate-pulse"></div>
       
       {/* Main content */}
       <div className="container mx-auto px-4 py-16 flex flex-col lg:flex-row items-center justify-between relative">

@@ -1,0 +1,70 @@
+.BugsMain {
+    background-color: #101010;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow-x: hidden;
+}
+  
+.HeadingSpon {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    padding: 20px 20px;
+}
+  
+.allBugs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Spacing between rows */
+    height: 70vh;
+    position: relative;
+    overflow-x: hidden;
+    width: 100vw;
+}
+  
+.sponsorRow {
+    display: flex;
+    gap: 2rem; /* Spacing between sponsor logos */
+    width: max-content;
+}
+  
+  
+.sponsorRow {
+    display: flex;
+    gap: 2rem;
+    width: max-content;
+}
+  
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    pointer-events: none;
+    z-index: 2;
+}
+  
+.gradient-overlay.left {
+    left: 0;
+    background: linear-gradient(to right, #101010 0%, rgba(16, 16, 16, 0) 100%);
+}
+  
+.gradient-overlay.right {
+    right: 0;
+    background: linear-gradient(to left, #101010 0%, rgba(16, 16, 16, 0) 100%);
+}
+  
+  /* Keyframe animation for fallback */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+  
