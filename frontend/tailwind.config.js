@@ -65,6 +65,29 @@ export default {
 		},
 	  },
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [require("tailwindcss-animate"),
+		addVariablesForColors,
+	],
   };
+  function addVariablesForColors({ addBase, theme }) {
+    const colors = theme("colors");
+
+    function flattenColors(colors, prefix = "") {
+        return Object.entries(colors).reduce((acc, [key, value]) => {
+            if (typeof value === "object") {
+                Object.assign(acc, flattenColors(value, `${prefix}${key}-`));
+            } else {
+                acc[`--${prefix}${key}`] = value;
+            }
+            return acc;
+        }, {});
+    }
+
+    const newVars = flattenColors(colors);
+
+    addBase({
+        ":root": newVars,
+    });
+}
+
   
