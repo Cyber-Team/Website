@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { motion, useAnimationControls } from 'framer-motion';
 
-
 const testimonials = [
     {
       content: "CyberTeam's expertise in cybersecurity is unmatched. Their solutions have significantly strengthened our infrastructure.",
@@ -51,8 +50,7 @@ const testimonials = [
       role: "CEO, SecureNet",
       image: "/api/placeholder/40/40"
     }
-  ];
-  
+];
 
 const TestimonialCard = ({ content, author, role, image }) => (
     <motion.div 
@@ -67,19 +65,19 @@ const TestimonialCard = ({ content, author, role, image }) => (
         </div>
       </div>
     </motion.div>
-  );
-  
-  const ScrollingColumn = ({ items, speed = 20, direction = 1 }) => {
+);
+
+const ScrollingColumn = ({ items, speed = 20 }) => {
     const columnRef = useRef(null);
     const controls = useAnimationControls();
-  
+
     useEffect(() => {
       const animate = async () => {
         const columnHeight = columnRef.current?.offsetHeight || 0;
         const contentHeight = columnHeight / 2;
-  
+
         await controls.start({
-          y: direction * -contentHeight,
+          y: -contentHeight,
           transition: {
             duration: speed,
             ease: "linear",
@@ -87,37 +85,36 @@ const TestimonialCard = ({ content, author, role, image }) => (
           },
         });
       };
-  
+
       animate();
-    }, [direction, speed, controls]);
-  
+    }, [speed, controls]);
+
     return (
       <div className="relative overflow-hidden h-full" ref={columnRef}>
         <motion.div
           animate={controls}
           className="space-y-6"
         >
-          {/* Triple the items to ensure smooth infinite scroll */}
           {[...items, ...items, ...items].map((item, index) => (
             <TestimonialCard key={`${item.author}-${index}`} {...item} />
           ))}
         </motion.div>
       </div>
     );
-  };
-  
-  export default function TestimonialsSection() {
+};
+
+export default function TestimonialsSection() {
     const splitIntoColumns = (arr, cols) => {
       const result = Array.from({ length: cols }, () => []);
       arr.forEach((item, i) => result[i % cols].push(item));
       return result;
     };
-  
+
     const columns = splitIntoColumns(testimonials, 3);
-  
+
     return (
       <section className="bg-black min-h-screen py-20 relative overflow-hidden">
-        {/* Enhanced Gradient Overlays */}
+        {/* Gradient Overlays */}
         <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black via-black/80 to-transparent z-10" />
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black via-black/80 to-transparent z-10" />
         
@@ -136,8 +133,7 @@ const TestimonialCard = ({ content, author, role, image }) => (
               <div key={i} className="h-full">
                 <ScrollingColumn 
                   items={column} 
-                  speed={30 + i * 5} // Slightly adjusted speeds
-                  direction={i % 2 ? 1 : -1} // Alternate directions
+                  speed={25} // Same speed for all columns
                 />
               </div>
             ))}
@@ -145,4 +141,4 @@ const TestimonialCard = ({ content, author, role, image }) => (
         </div>
       </section>
     );
-  }
+}
