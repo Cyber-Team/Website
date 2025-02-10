@@ -1,5 +1,6 @@
 // import Sponsors from './pages/Sponsors'
 import './App.css'
+import BlogSlider from './components/BlogSection';
 
 import FAQSection from './components/Faqs';
 
@@ -24,7 +25,7 @@ function App() {
     <div className="bg-gray-900 text-white min-h-screen">
       <SpotlightNewDemo />
       <Members />
-      
+      <BlogSlider />
       <Milestone />
       <Bugs />
       <TestimonialsSection />
