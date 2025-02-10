@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Plus, Minus, MessageCircle, ZapIcon, ShieldCheck, Settings } from 'lucide-react';
-import ThreeBackground from './ThreeBackground'; // Import the Three.js background component
+
 
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -94,7 +94,7 @@ const FAQSection = () => {
   return (
     <div className="py-24 bg-gray-900 relative overflow-hidden">
       {/* Three.js Background */}
-      <ThreeBackground />
+     
 
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-b from-cyan-500/5 to-blue-500/5 transition-opacity duration-700"></div>

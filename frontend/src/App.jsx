@@ -3,7 +3,7 @@ import './App.css'
 import BlogSlider from './components/BlogSection';
 import Clients from './components/Clients';
 import FAQSection from './components/Faqs';
-import He from './components/He';
+
 import { SpotlightNewDemo } from './components/Hero';
 // import Boxbss from './components/Boxbss'
 import "./components/MemberCard";
