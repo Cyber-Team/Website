@@ -17,7 +17,7 @@ import Navbar from './components/ui/simpleNavbar';
 import Bugs from './pages/Bugs';
 
 import "./pages/Members"
-import Members from './pages/Members';
+// import Members from './pages/Members';
 // import Sponsors from './pages/Sponsors';
 function App() {
 

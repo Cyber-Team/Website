@@ -9,14 +9,16 @@ export function SVGMaskEffectDemo() {
         revealText={
           <p
             className="max-w-4xl mx-auto text-slate-800 text-center  text-4xl font-bold">
-            The first rule of MRR Club is you do not talk about MRR Club. The
-            second rule of MRR Club is you DO NOT talk about MRR Club.
+            We don’t hack the system, we own it. 
+            <br></br>
+            <br></br>
+            CyberTeam: Empowering the next generation of cybersecurity leaders, we provide the tools, knowledge, and real-world skills needed to dominate the digital world
+            
           </p>
         }
         className="h-[40rem] border rounded-md">
-        The first rule of <span className="text-red-500">MRR Club</span> is you
-        do not talk about MRR Club. The second rule of MRR Club is you DO NOT
-        talk about <span className="text-red-500">MRR Club</span>.
+         We don’t break the systems, we<span className="text-red-500"> reprogram </span>the <span className="text-red-500">rules</span>
+        {/* <span className="text-red-500">MRR Club</span>. */}
       </MaskContainer>
     </div>)
   );

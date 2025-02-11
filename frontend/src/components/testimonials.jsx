@@ -3,8 +3,8 @@ import { motion, useAnimationControls } from 'framer-motion';
 
 const testimonials = [
     {
-      content: "CyberTeam's expertise in cybersecurity is unmatched. Their solutions have significantly strengthened our infrastructure.",
-      author: "Alex Carter",
+      content: "My team, Floorp, comprising of Abhishek Girish Sangeetha, Chirag Jamariya, and myself, recently participated in Paradox'24, a 24-hour Capture the Flag (CTF) cybersecurity competition organized by the IEEE Computer Society -VITC! Competing against over 170 participants from various colleges, we proudly secured the 16th position.The true measure of success, however, lies in the exceptional growth demonstrated by my teammates, who were new to the CTF landscape. The fun and informative foundational cybersecurity workshop conducted by Abhishek Kumar, Aditi Rai, and Ansh Sharma from the Cyber Team proved instrumental in their rapid development. Their ability to quickly grasp complex concepts and apply them effectively during the competition was very impressive. ",
+      author: "Abhinav Anil",
       role: "CTO, TechCorp",
       image: "/api/placeholder/40/40"
     },
