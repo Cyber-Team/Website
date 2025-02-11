@@ -9,7 +9,7 @@ const BoxBS = ({ image }) => {
       whileHover={{ scale: 1.1, y: -5 }}
       transition={{ duration: 0.2 }}
     >
-      <img src={image} alt="Sponsor" height="125" width="125" />
+      <img src={image} alt="Sponsor" height="900" width="90" />
     </motion.div>
   );
 };
