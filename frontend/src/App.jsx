@@ -4,7 +4,7 @@ import './App.css'
 import BlogSlider from './components/BlogSection';
 
 import FAQSection from './components/Faqs';
-import FooterSection from './components/Footer';
+// import FooterSection from './components/Footer';
 import { SpotlightNewDemo } from './components/Hero';
 // import Boxbss from './components/Boxbss'
 import "./components/MemberCard";
@@ -18,7 +18,7 @@ import Bugs from './pages/Bugs';
 
 import "./pages/Members"
 import Members from './pages/Members';
-import Sponsors from './pages/Sponsors';
+// import Sponsors from './pages/Sponsors';
 function App() {
 
 
@@ -66,9 +66,8 @@ function App() {
       <AnimatedTestimonialsDemo />
       <FAQSection />
       <SVGMaskEffectDemo />
-      <Sponsors />
-      <FooterSection />
-     
+      {/* <Sponsors /> */}
+
     </div>
 
  

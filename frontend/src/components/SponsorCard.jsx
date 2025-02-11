@@ -46,20 +46,23 @@ const SponsorCard = ({ tier, company }) => {
 
         {/* Company Info */}
         <div className="space-y-6">
-          <div className="flex items-start gap-4">
-            <div className="relative group-hover:scale-105 transition-transform">
-              <div className={`absolute inset-0 rounded-xl blur-md opacity-60 ${tier.gradientClasses}`}></div>
+          <div className="flex items-center gap-4">
+            {/* Centered Image Container */}
+            <div className="flex items-center justify-center relative group-hover:scale-105 transition-transform">
+              <div className={`absolute inset-0 items-center justify-center  rounded-xl blur-md opacity-60 ${tier.gradientClasses}`}></div>
               <img
                 src="/api/placeholder/100/100"
                 alt={company.name}
                 className="relative w-16 h-16 rounded-xl object-cover border-2 border-gray-800"
               />
             </div>
+            {/* Text Content */}
             <div className="flex-1">
               <h4 className="text-white font-semibold text-lg mb-1">{company.name}</h4>
               <p className="text-gray-400 leading-relaxed">{company.description}</p>
             </div>
           </div>
+        </div>
 
           {/* Features */}
           <div className="space-y-3">

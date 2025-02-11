@@ -3,9 +3,9 @@ import {
   Footer,
   FooterColumn,
   FooterBottom,
-  FooterContent} from "@components/ui/footer"; // Import shadcn UI components
-import LaunchUI from "./logos/launch-ui"; // Adjust the path as needed
-import Github from "./logos/github"; // Adjust the path as needed
+  FooterContent} from "@components/ui/footer"; 
+import LaunchUI from "./logos/launch-ui"; 
+import Github from "./logos/github"; 
 import X from "./logos/x"; 
 import Discord from "./logos/discord";
 
