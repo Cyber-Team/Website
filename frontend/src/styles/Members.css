@@ -1,10 +1,11 @@
 /* Members.css */
 .MembersMain {
-    background-color: #101010;
+    background-color: #03070b;
     color: white;
+    /* font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; */
     min-height: 100vh;
     padding: 20px;
-    font-family: Arial, sans-serif;
+    
 }
   
 .HeadingMem {

@@ -3,13 +3,19 @@
     border-radius: 10px;
     overflow: hidden;
     width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #2e080d; /* Add a border with the color #2e080d */
+    
 }
   
 .MemCardmain:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 0 15px #2e080d, /* Outer glow */
+                0 0 10px #2e080d, /* Middle glow */
+                0 0 5px #2e080d; /* Inner glow */
 }
   
 .MemCardmain img {
