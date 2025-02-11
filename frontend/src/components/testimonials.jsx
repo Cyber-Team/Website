@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import { motion, useAnimationControls } from 'framer-motion';
 
 const testimonials = [
@@ -9,45 +9,33 @@ const testimonials = [
       image: "/api/placeholder/40/40"
     },
     {
-      content: "The most innovative security team we've worked with. Their proactive approach has saved us from multiple threats.",
-      author: "Samantha Lee",
-      role: "IT Security Manager",
+      content: "Hello bhaiya! once again, thank you so so much for today's session! Please aise hi sessions karate rahiye aage bhi!!! bohot kuch seekhno ko mila aaj :)",
+      author: "Aditya Vardhan Sharma ",
+      role: "Student",
       image: "/api/placeholder/40/40"
     },
     {
-      content: "CyberTeam helped us streamline our security protocols, making our systems more resilient and efficient.",
-      author: "Jordan Wright",
-      role: "Senior DevOps Engineer",
+      content: "Thanks a lot to the Linux club Team for such an amazing event. Special credits to @Amreal.py and the tech team for organising things so well. (Loved the new dynamic ctfs)",
+      author: "Faizaan",
+      role: "VIT Chennai",
       image: "/api/placeholder/40/40"
     },
     {
-      content: "Their penetration testing services uncovered vulnerabilities we didn't even know existed. Highly recommended!",
-      author: "Chris Thompson",
-      role: "Cybersecurity Analyst",
+      content: "I agree. This time it was much more immersive and adrenaline pumping than password 2023, especially because of the new dynamic style ctfs",
+      author: "Sugam Sharma",
+      role: "Student",
       image: "/api/placeholder/40/40"
     },
     {
-      content: "With CyberTeam's cutting-edge solutions, we no longer worry about data breaches or compliance issues.",
-      author: "Emily Roberts",
-      role: "CISO, FinTech Inc.",
+      content: "Ahhhh it has been an awesome event, great experience!! Congratulations to all the fellow participants for making this competition even more competititve, learnt a lot of new things And kudos to Cyberteam for hosting this amazing event flawlessly Will be eagerly waiting for the next event!! ",
+      author: "Bhuvan",
+      role: "Unknown",
       image: "/api/placeholder/40/40"
     },
     {
-      content: "Incredible team with deep cybersecurity knowledge. Their incident response strategy saved us from a major attack.",
-      author: "Nathan Green",
-      role: "Network Security Engineer",
-      image: "/api/placeholder/40/40"
-    },
-    {
-      content: "CyberTeam's threat intelligence services have given us real-time insights, keeping us ahead of potential cyber risks.",
-      author: "Olivia Adams",
-      role: "Head of IT, Global Solutions",
-      image: "/api/placeholder/40/40"
-    },
-    {
-      content: "Exceptional service and top-notch security solutions. CyberTeam is a game-changer in the industry.",
-      author: "Benjamin Carter",
-      role: "CEO, SecureNet",
+      content: "Special thanks to Abhishek Kumar, Ansh Sharma and Aditi Rai from Cyber Team for making this event as fun as it was. Looking forward to more such opportunities to grow and excel!",
+      author: "Unknown",
+      role: "Unknown",
       image: "/api/placeholder/40/40"
     }
 ];

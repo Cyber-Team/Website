@@ -54,8 +54,9 @@ function App() {
         </Route>
       </Routes>
       </BrowserRouter> */}
-      <SVGMaskEffectDemo />
       <SpotlightNewDemo />
+      <SVGMaskEffectDemo />
+      
       {/* <Members /> */}
       <BlogSlider />
       <Milestone />
