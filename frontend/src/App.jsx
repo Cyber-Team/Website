@@ -54,6 +54,7 @@ function App() {
         </Route>
       </Routes>
       </BrowserRouter> */}
+      <SVGMaskEffectDemo />
       <SpotlightNewDemo />
       {/* <Members /> */}
       <BlogSlider />
@@ -65,7 +66,7 @@ function App() {
       <TestimonialsSection />
       <AnimatedTestimonialsDemo />
       <FAQSection />
-      <SVGMaskEffectDemo />
+      
       {/* <Sponsors /> */}
 
     </div>
