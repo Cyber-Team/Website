@@ -49,7 +49,7 @@ const SponsorCard = ({ tier, company }) => {
           <div className="flex items-center gap-4">
             {/* Centered Image Container */}
             <div className="flex items-center justify-center relative group-hover:scale-105 transition-transform">
-              <div className={`absolute inset-0 items-center justify-center  rounded-xl blur-md opacity-60 ${tier.gradientClasses}`}></div>
+              <div className={`absolute inset-0  rounded-xl blur-md opacity-60 ${tier.gradientClasses}`}></div>
               <img
                 src="/api/placeholder/100/100"
                 alt={company.name}
