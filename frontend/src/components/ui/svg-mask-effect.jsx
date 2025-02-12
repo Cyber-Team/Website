@@ -35,22 +35,22 @@ export const MaskContainer = ({
       ref={containerRef}
       className={cn("h-screen relative", className)}
       style={{
-        backgroundColor: isHovered ? "white" : "#040404",
+        backgroundColor: isHovered ? "#040404" : "#040404",
       }}
     >
       <motion.div
         className="w-full h-full flex items-center justify-center text-6xl absolute bg-black bg-grid-white/[0.2] [mask-image:url(/mask.svg)] [mask-size:40px] [mask-repeat:no-repeat]"
         animate={{
-          maskPosition: `${mousePosition.x - maskSize / 2}px ${
-            mousePosition.y - maskSize / 2
+          maskPosition: `${mousePosition.x - maskSize / 2.2}px ${
+            mousePosition.y - maskSize / 2.2
           }px`,
-          maskSize: `${maskSize}px`,
+          maskSize: `${maskSize/1.2}px`,
         }}
         transition={{
           duration: 0,
         }}
       >
-        <div className="absolute inset-0 bg-black h-full w-full z-0 opacity-50" />
+        <div className="absolute inset-0 bg-white h-full w-full z-0 opacity-50" />
         <div
           onMouseEnter={() => {
             setIsHovered(true);
@@ -60,7 +60,7 @@ export const MaskContainer = ({
           }}
           className="max-w-4xl mx-auto text-center text-4xl font-bold relative z-20"
           style={{
-            color: isHovered ? "white" : "white", // Text remains white on hover
+            color: isHovered ? "black" : "white", // Text remains white on hover
           }}
         >
           {children}
