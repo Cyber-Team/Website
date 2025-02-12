@@ -4,7 +4,7 @@ import './App.css'
 import BlogSlider from './components/BlogSection';
 
 import FAQSection from './components/Faqs';
-import FooterSection from './components/Footer';
+import Footer from './components/Footer';
 import { SpotlightNewDemo } from './components/Hero';
 // import Boxbss from './components/Boxbss'
 import "./components/MemberCard";
@@ -67,7 +67,7 @@ function App() {
       <FAQSection />
       <SVGMaskEffectDemo />
       <Sponsors />
-      <FooterSection />
+      <Footer/>
      
     </div>
 
