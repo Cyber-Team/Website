@@ -6,37 +6,37 @@ const testimonials = [
       content: "My team, Floorp, comprising of Abhishek Girish Sangeetha, Chirag Jamariya, and myself, recently participated in Paradox'24, a 24-hour Capture the Flag (CTF) cybersecurity competition organized by the IEEE Computer Society -VITC! Competing against over 170 participants from various colleges, we proudly secured the 16th position.The true measure of success, however, lies in the exceptional growth demonstrated by my teammates, who were new to the CTF landscape. The fun and informative foundational cybersecurity workshop conducted by Abhishek Kumar, Aditi Rai, and Ansh Sharma from the Cyber Team proved instrumental in their rapid development. Their ability to quickly grasp complex concepts and apply them effectively during the competition was very impressive. ",
       author: "Abhinav Anil",
       role: "CTO, TechCorp",
-      image: "/api/placeholder/40/40"
+      image: "/testpic.jpg"
     },
     {
       content: "Hello bhaiya! once again, thank you so so much for today's session! Please aise hi sessions karate rahiye aage bhi!!! bohot kuch seekhno ko mila aaj :)",
       author: "Aditya Vardhan Sharma ",
       role: "Student",
-      image: "/api/placeholder/40/40"
+      image: "/testpic.jpg"
     },
     {
       content: "Thanks a lot to the Linux club Team for such an amazing event. Special credits to @Amreal.py and the tech team for organising things so well. (Loved the new dynamic ctfs)",
       author: "Faizaan",
       role: "VIT Chennai",
-      image: "/api/placeholder/40/40"
+      image: "/testpic.jpg"
     },
     {
       content: "I agree. This time it was much more immersive and adrenaline pumping than password 2023, especially because of the new dynamic style ctfs",
       author: "Sugam Sharma",
       role: "Student",
-      image: "/api/placeholder/40/40"
+      image: "/testpic.jpg"
     },
     {
       content: "Ahhhh it has been an awesome event, great experience!! Congratulations to all the fellow participants for making this competition even more competititve, learnt a lot of new things And kudos to Cyberteam for hosting this amazing event flawlessly Will be eagerly waiting for the next event!! ",
       author: "Bhuvan",
       role: "Unknown",
-      image: "/api/placeholder/40/40"
+      image: "/testpic.jpg"
     },
     {
       content: "Special thanks to Abhishek Kumar, Ansh Sharma and Aditi Rai from Cyber Team for making this event as fun as it was. Looking forward to more such opportunities to grow and excel!",
       author: "Unknown",
       role: "Unknown",
-      image: "/api/placeholder/40/40"
+      image: "/testpic.jpg"
     }
 ];
 
