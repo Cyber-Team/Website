@@ -1,10 +1,40 @@
 import { motion } from 'framer-motion';
 import BoxBS from '../components/Boxbss';
-import sp from '../assets/sp.png';
 import '../styles/Bugs.css';
-
+import bangladesh from "../assets/BangladeshNavy.svg.png"
+import GoaPolice from "../assets/GoaPolice.png"
+import Google from "../assets/Google_logo.svg.webp"
+import headscale from "../assets/headscale.png"
+import igl from "../assets/IGL.png"
+import mhgov from "../assets/mhgov.png"
+import nobull from "../assets/nobull.png"
+import pvr from "../assets/png-clipart-pvr-cinemas-logo-cinema-logos-thumbnail.png"
+import punjab from "../assets/punjab-gov.svg"
+import razorpay from "../assets/razorpay.webp"
+import srilanka from "../assets/SriLanka.svg.webp"
+import vit from "../assets/vit.svg"
+import zingsec from "../assets/zingsec.svg"
 const Bugs = () => {
-  const BugsPerRow = 7;
+  // Array of image links
+  const bugImages = [
+    bangladesh,
+    GoaPolice,
+    Google,
+    headscale,
+    igl,
+    mhgov,
+    nobull,
+    pvr,
+    punjab,
+    razorpay,
+    srilanka,
+    vit,
+    zingsec,
+    bangladesh
+   
+  ];
+
+  const BugsPerRow = bugImages.length /2; // Number of bugs per row
 
   return (
     <div className="BugsMain">
@@ -20,8 +50,8 @@ const Bugs = () => {
             ease: 'linear',
           }}
         >
-          {[...Array(BugsPerRow * 2)].map((_, index) => (
-            <BoxBS key={index} image={sp} />
+          {[...Array(BugsPerRow)].map((_, index) => (
+            <BoxBS key={index} image={bugImages[index % bugImages.length]} />
           ))}
         </motion.div>
 
@@ -35,23 +65,8 @@ const Bugs = () => {
             ease: 'linear',
           }}
         >
-          {[...Array(BugsPerRow * 2)].map((_, index) => (
-            <BoxBS key={index} image={sp} />
-          ))}
-        </motion.div>
-
-        {/* Row 3 (Left scroll) */}
-        <motion.div
-          className="sponsorRow"
-          animate={{ x: ['0%', '-100%'] }}
-          transition={{
-            duration: 40,
-            repeat: Infinity,
-            ease: 'linear',
-          }}
-        >
-          {[...Array(BugsPerRow * 2)].map((_, index) => (
-            <BoxBS key={index} image={sp} />
+          {[...Array(BugsPerRow)].map((_, index) => (
+            <BoxBS key={index} image={bugImages[(index + BugsPerRow) % bugImages.length]} />
           ))}
         </motion.div>
       </div>

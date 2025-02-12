@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Plus, Minus, MessageCircle, Zap, ShieldCheck, Settings } from "lucide-react";
 
 const FAQSection = () => {
@@ -6,51 +6,57 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      category: "Getting Started",
+      category: "About CyberTeam",
       icon: <Zap className="w-5 h-5 text-[#8e0d1e]" />,
       questions: [
         {
-          question: "How do I get started with CyberTeam Elite?",
+          question: "What is CyberTeam?",
           answer:
-            "Getting started is easy! Simply sign up for an account, complete your security assessment, and our team will guide you through the onboarding process.",
+            "CyberTeam is a company focused on raising cybersecurity awareness and providing a platform for enthusiasts to enhance their skills through workshops, training, and resources.",
         },
         {
-          question: "What security features are included in the basic plan?",
+          question: "Who can join CyberTeam?",
           answer:
-            "Our basic plan includes real-time threat monitoring, automated security scans, incident response support, and access to our security dashboard.",
+            "Anyone passionate about cybersecurity—beginners, students, and professionals—are welcome to join and grow with us.",
         },
       ],
     },
     {
-      category: "Security & Privacy",
+      category: "Services We Offer",
       icon: <ShieldCheck className="w-5 h-5 text-[#8e0d1e]" />,
       questions: [
         {
-          question: "How do you handle data privacy and protection?",
+          question: "What services does CyberTeam offer?",
           answer:
-            "We implement industry-leading encryption standards and follow strict data protection protocols.",
+            "Workshops & Training: Hands-on workshops covering a wide range of topics, from hacking techniques to defense strategies, with exclusive content. Capture The Flag (CTF) Events: Real-world inspired challenges designed to test and improve your skills in areas like web exploitation and cryptography.Security Audits & Consulting: Expert audits and consulting services to help businesses strengthen their cybersecurity posture.Exclusive Resources & Insights: Stay updated with our weekly newsletter, Secure Saturdays, offering in-depth cybersecurity insights.Certification Preparation: Get ready for certifications like CEH and CC through real-time hacking experiences and challenges.",
         },
-        {
-          question: "What certifications does your team hold?",
-          answer:
-            "Our team holds certifications such as CISSP, CEH, CompTIA Security+, and ISO 27001 Lead Auditor.",
-        },
+        
       ],
     },
     {
-      category: "Support",
+      category: "General Questions",
       icon: <MessageCircle className="w-5 h-5 text-[#8e0d1e]" />,
       questions: [
         {
-          question: "What kind of support do you offer?",
+          question: "How can I attend a CyberTeam workshop?",
           answer:
-            "We provide 24/7 technical support through multiple channels including live chat, email, and phone.",
+            "Register online through our website and stay updated on upcoming events via our Instagram, LinkedIn, and WhatsApp channels.",
         },
         {
-          question: "How quickly do you respond to security incidents?",
+          question: "Are CyberTeam’s workshops beginner-friendly?",
           answer:
-            "Our incident response team is available 24/7 with a guaranteed response time of 15 minutes for critical incidents.",
+            "Yes! Our workshops cater to all levels, from beginners to advanced, ensuring there's something for everyone.",
         },
+        {
+          question: "Can I get a certificate for attending a CyberTeam workshop?",
+          answer:
+            "Yes, we provide participation certificates, and top performers in CTFs and challenges receive certificates of excellence.",
+        },
+        {
+          question: "Does CyberTeam offer internships?",
+          answer:
+            "Yes, we offer internships in various roles. Follow our website and social media for the latest opportunities.",
+        }
       ],
     },
   ];
@@ -79,7 +85,7 @@ const FAQSection = () => {
         </div>
 
         {/* FAQ Categories */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {faqs.map((category) => (
             <div
               key={category.category}
@@ -94,7 +100,7 @@ const FAQSection = () => {
               <p className="text-gray-400">{`Find answers about ${category.category.toLowerCase()} and related topics.`}</p>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* FAQ Items */}
         <div className="max-w-3xl mx-auto bg-[#12131c] backdrop-blur-sm rounded-2xl p-8 transition-all duration-700 hover:shadow-lg hover:shadow-[#8e0d1e]/40">
@@ -152,9 +158,11 @@ const FAQSection = () => {
         {/* Call to Action */}
         <div className="text-center mt-16">
           <p className="text-gray-400 mb-4">Still have questions?</p>
+          <a href="mailto:support@cyberteam.in?subject=Support Request&body=Hello, I need assistance with...">
           <button className="px-8 py-4 bg-gradient-to-r from-[#8e0d1e] to-[#51292e] text-white rounded-lg font-semibold transition-all duration-700 hover:shadow-lg hover:shadow-[#8e0d1e]/40 transform hover:-translate-y-1">
             Contact Support
           </button>
+          </a>
         </div>
       </div>
     </div>

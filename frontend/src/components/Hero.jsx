@@ -2,7 +2,7 @@ import React from "react";
 import { Spotlight } from "./ui/spotlight-new";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-
+import { SVGMaskEffectDemo } from "./Reveal";
 const BoxesCore = ({ className, ...rest }) => {
   const rows = new Array(150).fill(1);
   const cols = new Array(100).fill(1);
@@ -78,12 +78,13 @@ export function SpotlightNewDemo() {
       <div className="flex justify-between items-center w-full p-4 max-w-7xl mx-auto relative z-10">
         {/* Text content on the left */}
         <div className="w-3/4 pl-8">
-          <h1 className="text-4xl md:text-7xl font-bold text-left bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+          {/* <h1 className="text-4xl md:text-7xl font-bold text-left bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
             CyberTeam <br /> which is not overused.
           </h1>
           <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-left">
             A future-driven collective empowering cybersecurity and technology solutions.
-          </p>
+          </p> */}
+          <SVGMaskEffectDemo />
         </div>
         
         {/* Logo on the right */}

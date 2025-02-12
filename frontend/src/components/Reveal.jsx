@@ -3,21 +3,18 @@ import { MaskContainer } from "./ui/svg-mask-effect";
 
 export function SVGMaskEffectDemo() {
   return (
-    (<div
+    <div
       className="h-[40rem] w-full flex items-center justify-center bg-inherit  overflow-hidden">
       <MaskContainer
         revealText={
-          <p
-            className="max-w-4xl mx-auto text-slate-800 text-center  text-4xl font-bold">
-            The first rule of MRR Club is you do not talk about MRR Club. The
-            second rule of MRR Club is you DO NOT talk about MRR Club.
+          <p className="max-w-4xl mx-auto text-slate-100 text-center text-4xl font-bold">
+            <span className="text-red-500">CyberTeam</span>: Empowering the next generation of cybersecurity leaders, we provide the tools, knowledge, and real-world skills needed to dominate the digital world
           </p>
         }
-        className="h-[40rem] border rounded-md">
-        The first rule of <span className="text-red-500">MRR Club</span> is you
-        do not talk about MRR Club. The second rule of MRR Club is you DO NOT
-        talk about <span className="text-red-500">MRR Club</span>.
+        className="h-[80rem] rounded-md"
+      >
+        We don’t break the systems, we <span className="text-red-500">reprogram</span> the <span className="text-red-500">rules</span>
       </MaskContainer>
-    </div>)
-  );
+    </div>
+  )
 }
