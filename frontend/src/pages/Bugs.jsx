@@ -58,7 +58,10 @@ const Bugs = () => {
 
   return (
     <div className="relative w-screen h-[70vh] bg-[#101010] flex flex-col items-center justify-center text-white overflow-hidden">
-      <h2 className="text-5xl font-bold mb-8 p-5">Our Bugs</h2>
+      <h1 className="heading text-white text-center text-4xl font-bold mb-4 py-10">
+          Our
+          <span className="text-red-900"> Bugs</span>
+        </h1>
       
       <div className="flex flex-col gap-8 h-[70vh] relative overflow-hidden w-screen">
         {/* Row 1 - Left scroll */}
