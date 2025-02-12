@@ -158,7 +158,7 @@ const FAQSection = () => {
         {/* Call to Action */}
         <div className="text-center mt-16">
           <p className="text-gray-400 mb-4">Still have questions?</p>
-          <a href="mailto:aakriti.meh.2004@gmail.com?subject=Support Request&body=Hello, I need assistance with...">
+          <a href="mailto:support@cyberteam.in?subject=Support Request&body=Hello, I need assistance with...">
           <button className="px-8 py-4 bg-gradient-to-r from-[#8e0d1e] to-[#51292e] text-white rounded-lg font-semibold transition-all duration-700 hover:shadow-lg hover:shadow-[#8e0d1e]/40 transform hover:-translate-y-1">
             Contact Support
           </button>
