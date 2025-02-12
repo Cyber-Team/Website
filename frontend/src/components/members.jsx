@@ -30,7 +30,7 @@ export function AnimatedTestimonialsDemo() {
     {
       quote:
         "In cybersecurity, trust no one—verify everything",
-      name: "Nyasa",
+      name: "Nysa",
       designation: "Content Lead",
       src: nyasa,
     },
@@ -45,7 +45,7 @@ export function AnimatedTestimonialsDemo() {
   ];
   return (
     <div className="bg-[#06080b]">
-      <h1 className="text-5xl font-bold text-center py-10 \">Meet Our Core Team</h1>
+      <h1 className="text-5xl font-bold text-center py-10 \">Meet Our <span className="text-red-700"> Core </span> Team</h1>
       <AnimatedTestimonials testimonials={testimonials} />
     </div>
   );

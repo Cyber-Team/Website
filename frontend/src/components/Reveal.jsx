@@ -12,7 +12,7 @@ export function SVGMaskEffectDemo() {
             <span className="text-white">Cyber</span>
             <span className="text-red-900">Team</span>
           </span>
-          <span className="block text-3xl mt-6 text-slate-200 italic bg-gradient-to-r from-cyan-500 via-green-400 to-purple-500 bg-clip-text text-transparent font-[Rajdhani]">
+          <span className="block text-3xl mt-6 text-slate-200 italic text-white font-[Rajdhani]">
             Empowering the next generation of cybersecurity leaders, we provide the tools, knowledge, and real-world skills needed to dominate the digital world.
           </span>
         </p>
