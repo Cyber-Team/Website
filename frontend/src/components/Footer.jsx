@@ -4,11 +4,11 @@ import {  Twitter, Linkedin, Github,Youtube , Instagram} from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-black text-white py-12">
+    <footer className="w-full bg-blue text-white py-12">
       <div className="w-[calc(100%-4rem)] mx-auto">
         <div className="flex items-center flex-col justify-center px-2 md:px-10">
-          <h2 className="text-2xl md:text-6xl font-bold text-center">
-            Cyber Team | Protecting Your Digital World
+          <h2 className="text-2xl md:text-5xl font-bold text-center">
+            Cyber Team : Protecting Your Digital World
           </h2>
           <p className="text-sm md:text-2xl max-w-xl mt-6 text-center">
             Stay protected. Cyber threats evolve, but we stay ahead to keep you secure.
