@@ -3,6 +3,7 @@ import { Spotlight } from "./ui/spotlight-new";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { SVGMaskEffectDemo } from "./Reveal";
+import logo from "../assets/logo.png"
 
 const BoxesCore = ({ className, ...rest }) => {
   const rows = new Array(150).fill(1);
@@ -85,7 +86,7 @@ export function SpotlightNewDemo() {
         <div className="w-full md:w-1/4 flex justify-end ml-auto order-1 md:order-2">
           <img 
             className="w-156 h-156 md:w-164 md:h-164 rounded-full" 
-            src="/logo.png" 
+            src={logo}
             alt="logo"
           />
         </div>
