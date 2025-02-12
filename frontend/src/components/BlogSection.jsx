@@ -1,25 +1,27 @@
 import React from 'react';
-
+import blog1 from "../assets/blog-1.jpg"
+import blog2 from "../assets/blog-2.jpg"
+import blog3 from "../assets/blog-3.jpg"
 const posts = [
   {
     id: 1,
     title: "Host Website For Free On Github Pages Using Custom Domain",
     excerpt: " Why depend on DigitalOcean or AWS to host your website publicly? Let's Host it using github pages using your custom domain.",
-    image: "/blog-1.jpg",
+    image: blog1,
     link: "https://medium.com/@raiaditi178/host-your-site-website-on-github-pages-using-custom-domain-280e397b18b2"
   },
   {
     id: 2,
     title: "SyntaxError: Unexpected token ",
     excerpt: "NVM makes it easier to manage multiple versions of Node.js across different projects that require different versions.",
-    image: "/blog-2.jpg",
+    image: blog2,
     link: "https://medium.com/@raiaditi178/syntaxerror-unexpected-token-at-module-compile-internal-modules-cjs-loader-js-723-23-60a1f52f658b"
   },
   {
     id: 3,
     title: "How to Create a New User Account on Linux with root?",
     excerpt: "Creating a new user account on Linux with root privileges involves adding the user with the useradd command, ensuring they have a home directory, and granting them sudo access. After that, the passwd command is used to set a password for the new user.",
-    image: "/blog-3.jpg",
+    image: blog3,
     link: "https://medium.com/@raiaditi178/how-to-create-a-new-user-account-on-kali-linux-with-root-98c0d76368c4"
   }
 ];
