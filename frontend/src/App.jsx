@@ -10,7 +10,7 @@ import { SpotlightNewDemo } from './components/Hero';
 import "./components/MemberCard";
 import { AnimatedTestimonialsDemo } from './components/members';
 import Milestone from './components/Milestone';
-import { SVGMaskEffectDemo } from './components/Reveal';
+//import { SVGMaskEffectDemo } from './components/Reveal';
 import TestimonialsSection from './components/testimonials';
 import Navbar from './components/ui/simpleNavbar';
 //import {Routes,Route,BrowserRouter} from "react-router-dom";
@@ -27,6 +27,28 @@ function App() {
     
     <div className="bg-gray-900 text-white min-h-screen">
       <Navbar />
+      <section id="home">
+        <SpotlightNewDemo />
+      </section>
+      
+      <section id="blogs">
+        <BlogSlider />
+      </section>
+      <section id="milestones">
+        <Milestone />
+      </section>
+      <section id="bugs">
+        <Bugs />
+      </section>
+      <section id="testimonials">
+        <TestimonialsSection />
+      </section>
+      <section id="members">
+        <AnimatedTestimonialsDemo />
+      </section>
+      <section id="faqs">
+        <FAQSection />
+      </section>
       {/* <BrowserRouter>
       <Routes>
         <Route exact path="" element={<SpotlightNewDemo />}>
@@ -54,19 +76,16 @@ function App() {
         </Route>
       </Routes>
       </BrowserRouter> */}
-      <SpotlightNewDemo />
-      <SVGMaskEffectDemo />
       
-      {/* <Members /> */}
+
+      {/* Main here */}
+      {/* <SpotlightNewDemo />
       <BlogSlider />
-      <Milestone />
-      
-      
-   
+      <Milestone />   
       <Bugs />
       <TestimonialsSection />
       <AnimatedTestimonialsDemo />
-      <FAQSection />
+      <FAQSection /> */}
       
       {/* <Sponsors /> */}
 
