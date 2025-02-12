@@ -1,6 +1,5 @@
+import React from 'react';
 import { motion } from 'framer-motion';
-import BoxBS from '../components/Boxbss';
-import '../styles/Bugs.css';
 import bangladesh from "../assets/BangladeshNavy.svg.png"
 import GoaPolice from "../assets/GoaPolice.png"
 import Google from "../assets/Google_logo.svg.webp"
@@ -14,8 +13,18 @@ import razorpay from "../assets/razorpay.webp"
 import srilanka from "../assets/SriLanka.svg.webp"
 import vit from "../assets/vit.svg"
 import zingsec from "../assets/zingsec.svg"
+const BoxBS = ({ image }) => (
+  <div className="flex items-center justify-center w-48 h-32 bg-gray-800 rounded-lg overflow-hidden">
+    <img 
+      src={image} 
+      alt="Logo" 
+      className="max-w-full max-h-full object-contain p-4"
+    />
+  </div>
+);
+
 const Bugs = () => {
-  // Array of image links
+  // Array of image paths - replace these with your actual image imports
   const bugImages = [
     bangladesh,
     GoaPolice,
@@ -30,19 +39,31 @@ const Bugs = () => {
     srilanka,
     vit,
     zingsec,
-    bangladesh
-   
+    bangladesh,
+    GoaPolice,
+    Google,
+    headscale,
+    igl,
+    mhgov,
+    nobull,
+    pvr,
+    punjab,
+    razorpay,
+    srilanka,
+    vit,
+    zingsec,
   ];
 
-  const BugsPerRow = bugImages.length /2; // Number of bugs per row
+  const bugsPerRow = bugImages.length / 2;
 
   return (
-    <div className="BugsMain">
-      <div className="HeadingSpon">Our Bugs</div>
-      <div className="allBugs">
-        {/* Row 1 (Left scroll) */}
+    <div className="relative w-screen h-[70vh] bg-[#101010] flex flex-col items-center justify-center text-white overflow-hidden">
+      <h2 className="text-5xl font-bold mb-8 p-5">Our Bugs</h2>
+      
+      <div className="flex flex-col gap-8 h-[70vh] relative overflow-hidden w-screen">
+        {/* Row 1 - Left scroll */}
         <motion.div
-          className="sponsorRow"
+          className="flex gap-8 w-max"
           animate={{ x: ['0%', '-100%'] }}
           transition={{
             duration: 40,
@@ -50,14 +71,14 @@ const Bugs = () => {
             ease: 'linear',
           }}
         >
-          {[...Array(BugsPerRow)].map((_, index) => (
+          {[...Array(bugsPerRow)].map((_, index) => (
             <BoxBS key={index} image={bugImages[index % bugImages.length]} />
           ))}
         </motion.div>
 
-        {/* Row 2 (Right scroll) */}
+        {/* Row 2 - Right scroll */}
         <motion.div
-          className="sponsorRow"
+          className="flex gap-8 w-max"
           animate={{ x: ['-100%', '0%'] }}
           transition={{
             duration: 40,
@@ -65,15 +86,15 @@ const Bugs = () => {
             ease: 'linear',
           }}
         >
-          {[...Array(BugsPerRow)].map((_, index) => (
-            <BoxBS key={index} image={bugImages[(index + BugsPerRow) % bugImages.length]} />
+          {[...Array(bugsPerRow)].map((_, index) => (
+            <BoxBS key={index} image={bugImages[(index + bugsPerRow) % bugImages.length]} />
           ))}
         </motion.div>
-      </div>
 
-      {/* Add gradient overlays */}
-      <div className="gradient-overlay left" />
-      <div className="gradient-overlay right" />
+        {/* Gradient overlays */}
+        <div className="absolute top-0 bottom-0 left-0 w-24 pointer-events-none z-10 bg-gradient-to-r from-[#101010] to-transparent" />
+        <div className="absolute top-0 bottom-0 right-0 w-24 pointer-events-none z-10 bg-gradient-to-l from-[#101010] to-transparent" />
+      </div>
     </div>
   );
 };
