@@ -67,7 +67,6 @@ const BoxesCore = ({ className, ...rest }) => {
     </div>
   );
 };
-
 const Boxes = React.memo(BoxesCore);
 
 export function SpotlightNewDemo() {
@@ -75,17 +74,17 @@ export function SpotlightNewDemo() {
     <div className="h-[50rem] w-full rounded-md flex md:items-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <Spotlight />
       <Boxes className="opacity-20" />
-      
+
       <div className="flex flex-col md:flex-row justify-between items-center w-full p-4 max-w-7xl mx-auto relative z-10 gap-8">
         {/* Text content */}
         <div className="w-full md:w-3/4 px-4 md:pl-8 order-2 md:order-1">
           <SVGMaskEffectDemo />
         </div>
-        
-        {/* Logo */}
-        <div className="w-full md:w-1/4 flex justify-center order-1 md:order-2">
+
+        {/* Logo - Pushed Further Right */}
+        <div className="w-full md:w-1/4 flex justify-end ml-auto order-1 md:order-2">
           <img 
-            className="w-32 h-32 md:w-60 md:h-60 rounded-full" 
+            className="w-156 h-156 md:w-164 md:h-164 rounded-full" 
             src="/logo.png" 
             alt="logo"
           />

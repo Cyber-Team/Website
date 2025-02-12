@@ -50,7 +50,7 @@ export const MaskContainer = ({
           duration: 0,
         }}
       >
-        <div className="absolute inset-0 bg-white h-full w-full z-0 opacity-50" />
+        <div className="absolute inset-0 bg-white h-full w-full z-0 opacity-100" />
         <div
           onMouseEnter={() => {
             setIsHovered(true);
@@ -58,7 +58,7 @@ export const MaskContainer = ({
           onMouseLeave={() => {
             setIsHovered(false);
           }}
-          className="max-w-4xl mx-auto text-center text-4xl font-bold relative z-20"
+          className="max-w-4xl mx-auto text-center text-4xl font-bold relative z-20 "
           style={{
             color: isHovered ? "black" : "white", // Text remains white on hover
           }}
