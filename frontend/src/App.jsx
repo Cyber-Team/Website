@@ -15,7 +15,7 @@ import TestimonialsSection from './components/testimonials';
 import Navbar from './components/ui/simpleNavbar';
 //import {Routes,Route,BrowserRouter} from "react-router-dom";
 import Bugs from './pages/Bugs';
-
+import Footer from './components/Footer';
 import "./pages/Members"
 // import Members from './pages/Members';
 // import Sponsors from './pages/Sponsors';
@@ -48,6 +48,9 @@ function App() {
       </section>
       <section id="faqs">
         <FAQSection />
+      </section>
+      <section id="#footer">
+        <Footer />
       </section>
       {/* <BrowserRouter>
       <Routes>
